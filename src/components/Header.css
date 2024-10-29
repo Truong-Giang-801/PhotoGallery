@@ -1,0 +1,37 @@
+/* src/components/Header.css */
+.app-header {
+    background-color: #282c34; /* Dark background */
+    color: white; /* White text */
+    padding: 10px; /* Padding around the header */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out nav and title */
+  }
+  
+  .app-header h1 {
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow title to take up available space */
+    text-align: center; /* Center the title */
+  }
+  
+  .app-header nav {
+    margin-right: 20px; /* Add some spacing to the right */
+  }
+  
+  .app-header a {
+    color: white; /* White color for the link */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .home-button {
+    padding: 8px 16px; /* Add padding to button */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .home-button:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Change background on hover */
+  }
+  

@@ -1,0 +1,27 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.photo-item {
+  text-align: center;
+}
+
+.photo-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.photo-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.photo-detail img {
+  max-width: 100%;
+  border-radius: 8px;
+}

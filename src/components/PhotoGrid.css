@@ -1,0 +1,37 @@
+/* src/components/PhotoGrid.css */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive 4 columns */
+    gap: 16px; /* Space between photos */
+    padding: 16px; /* Padding around the grid */
+  }
+  
+  .photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation effect on hover */
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+  }
+  
+  .photo-item p {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: white; /* Text color for visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 4px 8px; /* Padding for text */
+    border-radius: 4px; /* Rounded corners for text background */
+  }
+  
+  .photo-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
