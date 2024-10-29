@@ -14,7 +14,7 @@ const PhotoGrid = () => {
     setLoading(true);
     try {
       const response = await axios.get(`https://api.unsplash.com/photos`, {
-        params: { page, per_page: 10 },
+        params: { page, per_page: 20 },
         headers: { Authorization: `Client-ID ${process.env.REACT_APP_UNSPLASH_API_KEY}` }
       });
       setPhotos((prev) => [...prev, ...response.data]);
